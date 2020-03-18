@@ -10,8 +10,36 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Hola mundo");
-            Console.Read();
+            int i;
+            
+            for (i = 1; i < 103; i++)
+            {
+                if (i % 5 == 0 || i % 3 == 0)
+                {  
+
+                if (i % 3 == 0)
+                {
+                    Console.WriteLine(i + " Foo");
+                }
+
+                if (i % 5 == 0)
+                {
+                    Console.WriteLine(i + " Bar");
+                }
+
+                if (i % 5 == 0 && i % 3 == 0)
+                {
+                    Console.WriteLine(i + "FooBar");
+                }
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
+
+            }
+
+            Console.ReadKey();
         }
     }
 }
